@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: grey;
+  width: 1600px;
+  font-family: 'Roboto';
+  
+  
+}
+
+.header {
+  color:#FFF;
+  padding-top: 32px;  
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+    .logo{
+      margin-left: 95px;
+      font-size: 36px;
+    }
+    .phone{
+      margin-right: 95px;
+      font-size: 24px;
+    }
+    
+    z-index: 999;
+  }
+
+
+
+
+
+
+.ul-items {
+  li{
+    list-style-type: none;
+    font-size: 20px;
+    display: inline;
+    padding: 50px;
+  }
+}
+
+.main-info {
+  height: 929px;
+  max-width: 1600px;
+  
+}
+
+.main-slider {
+  max-width: 1600px;
+}
+
+
+// СТИЛИ БЛОКА "КТО МЫ"
+
+.about-us {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+

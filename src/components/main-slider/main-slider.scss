@@ -1,0 +1,110 @@
+.first-block {
+    width: 100%;
+    height: 929px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    h1 {
+        font-size: 60px;
+        color: white;
+        font-family: Roboto;
+    }
+    p {
+        font-size: 24px;
+        color: white;
+        width: 655px;
+        text-align: center;
+        opacity: 90%;
+    }
+    background-image: url(./img/first-block.png);
+    .first-block-btn {
+        width: 262px;
+        height: 66px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0);
+        color:white;
+        font-family: Roboto;
+        font-size: 24px;
+        margin-top:116px;
+        transition: 2s;
+        &:hover {
+            background-color: rgb(85, 85, 87);
+            transition: 2s;
+            
+        }
+    }
+
+    
+
+}
+
+.count{
+    position: relative;
+    top: 587px;
+    left: -90px;
+    max-width:450px;
+    &:nth-child(1){
+       font-size: 72px; 
+       color: rgba(0, 0, 0, 0.3);
+    }    
+    span {
+        
+        font-size: 288px;
+        color: rgba(255, 255, 255, 0.3);
+        line-height: 338px;
+    }
+    font-size: 77px;
+    overflow: hidden;
+    
+    
+}
+
+.slick-prev {
+    z-index: 3;
+}
+.slick-prev:before {
+    content: "←Prev";
+    color:rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    z-index: 3;
+    font-family: Roboto;
+    position: relative;
+    left: 1376px;
+    top: 557px;
+  }
+
+.slick-next:before {
+    content: "Next→";
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px; 
+    z-index: 3;
+    font-family: Roboto;
+    left: -161px;
+    top: 557px;
+    position: relative;
+}
+
+
+.mail-svg{
+    background-image: url(./img/mail.svg);
+    z-index: 4;
+    width: 17px;
+    height: 14px;
+    position: relative;
+    top: -85px;
+    left: 95px;
+}
+
+.inst-svg {
+    background-image: url(./img/inst.svg);
+    z-index: 4;
+    width: 19px;
+    height: 19px;
+    position: relative;
+    top: -102px;
+    left: 130px;
+}
+
