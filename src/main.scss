@@ -11,6 +11,8 @@ body {
 }
 
 .header {
+  position: absolute;
+  width: 100%;
   color:#FFF;
   padding-top: 32px;  
   max-width: 1600px;
@@ -45,9 +47,7 @@ body {
 }
 
 .main-info {
-  height: 929px;
   max-width: 1600px;
-  
 }
 
 .main-slider {

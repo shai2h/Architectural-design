@@ -41,25 +41,30 @@
 
 }
 
-.count{
-    position: relative;
-    top: 587px;
-    left: -90px;
-    max-width:450px;
-    &:nth-child(1){
-       font-size: 72px; 
-       color: rgba(0, 0, 0, 0.3);
-    }    
-    span {
-        
-        font-size: 288px;
-        color: rgba(255, 255, 255, 0.3);
-        line-height: 338px;
-    }
-    font-size: 77px;
+.slick-slide {
     overflow: hidden;
-    
-    
+}
+
+.countBox {
+    position: relative;
+
+    .count{
+        position: absolute;
+        top: 170px;
+        left: -90px;
+        max-width:450px;
+        &:nth-child(1){
+            font-size: 72px;
+            color: rgba(0, 0, 0, 0.3);
+        }
+        span {
+            font-size: 288px;
+            color: rgba(255, 255, 255, 0.3);
+            line-height: 338px;
+        }
+        font-size: 77px;
+        overflow: hidden;
+    }
 }
 
 .slick-prev {

@@ -25,7 +25,7 @@ function App() {
 
       <div className="main-info">
         <div className="main-slider">
-          <Slider></Slider>
+          <Slider/>
         </div>
       </div>
 
