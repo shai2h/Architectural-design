@@ -59,8 +59,124 @@ body {
 
 .about-us {
   display: flex;
+  background-color: #FFF;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 929px;
+  
 }
 
+.about-us-text {
+  h1{
+    font-size: 48px;
+    color:black;
+
+  }
+
+  p{
+    font-family: Roboto;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 663px;
+    line-height:45px;
+    
+  }
+}
+
+.click-more {
+  display: flex;
+  justify-content: flex-end;
+  
+  h5 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  
+}
+  // СТРЕЛКА "ПОДРОБНЕЕ"
+  // .arrow {
+  //   cursor: pointer;
+  //   position: relative;
+  //   width: 80px;
+  //   height: 50px;
+  //   margin: 20px;
+  //   div {
+  //     position: relative;
+  //     top: 20px;
+  //     width: 36px;
+  //     height: 1px;
+  //     background-color: rgba(0, 0, 0, 0.8);
+  //     left:0;
+  //     display: block;
+  //   }
+  //   div {
+  //     &:after{
+  //       content: '';
+  //       position: absolute;
+  //       width: 36px;
+  //       height: 1px;
+  //       top: -11px;
+  //       right: -8px;
+  //       background-color: rgba(0, 0, 0, 0.8);
+  //       transform: rotate(45deg);
+  //     } 
+  //     &:before {
+  //       content: '';
+  //       position: absolute;
+  //       width: 36px;
+  //       height: 1px;
+  //       top: 11px;
+  //       right: -8px;
+  //       background-color: rgba(0, 0, 0, 0.8);
+  //       transform: rotate(-45deg);
+  //     }
+    
+  //   }
+  // } 
+
+.about-us-img {
+  background-image: url(./main_page_img/about-us-block-img.png);
+  width: 647px;
+  height: 578px;
+  
+}
+
+
+// Стилизация блока "проекты"
+
+.projects {
+  display: flex;
+  background-color: #FFF;
+  height: 929px;
+  flex-direction: column;
+  h1 {
+    font-size: 48px;
+    color: black;
+  }
+  span {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+  }
+}
+
+.projects-array {
+  display: flex;
+  width: 100%;
+  .card {
+    width: 360px;
+    height: 675px;
+    background-color: bisque;
+    margin: 0 54px;
+    p{
+      color:#FFF;
+      font-size: 24px;
+    }
+    span{
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 18px;
+    }
+  }
+}
 
 
 

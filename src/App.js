@@ -35,13 +35,41 @@ function App() {
             Кто мы ?
           </h1>
           <p>The word ‘architecture’ has Greek roots. It means ‘the principal builder’. The style of architecture changes according to latest technical features and people’s tastes. Some people think that architecture is simply the outer look of the building. But it’s not the full notion for this complex art form. Architecture includes designing and constructing the buildings as well as building them. Being an architect is not an easy job. A good architect should think over many tiny details before planning his project. </p>
-          <h5>Подробнее<span></span></h5>
-        
-        
-        
+          <div className="click-more">
+            <h5>Подробнее →</h5>
+            {/* <div className="arrow"> */}
+              {/* <div></div> */}
+            {/* </div> */}
+          </div>
+        </div>
+        <div className="about-us-img">
+
         </div>
       </div> 
 
+      <div className="projects">
+        <h1>Проекты</h1>
+        <div className="projects-array">
+          <div className="card"> 
+            <p>Название проекта</p>
+            <span>Подробнее →</span>
+          </div>
+          <div className="card">
+            <p>Название проекта</p>
+            <span>Подробнее →</span>
+          </div>
+          <div className="card">
+            <p>Название проекта</p>
+            <span>Подробнее →</span>
+          </div>
+          <div className="card">
+            <p>Название проекта</p>
+            <span>Подробнее →</span>
+          </div>
+        </div>
+        <span>Все проекты →</span>
+
+      </div>
 
     </div>
   );
