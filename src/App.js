@@ -69,7 +69,6 @@ function App() {
           </div>
         </div>
         <span className="more">Все проекты →</span>
-
       </div>
       
       <div className="why_us_block">
@@ -102,6 +101,67 @@ function App() {
               <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="services_block">
+        <h1>Услуги</h1>
+        <div className="services-container">
+          <div className="services_card"> 
+            <h5>Название услуги</h5>
+            
+          </div>
+          <div className="services_card">
+            <h5>Название услуги</h5>
+            
+          </div>
+          <div className="services_card">
+            <h5>Название услуги</h5>
+            
+          </div>
+
+          <div className="services_card">
+            <h5>Название услуги</h5>
+            
+          </div>
+        </div>
+        <span className="more-services">Все проекты →</span>
+      </div>
+
+      <div className="contact-us-block">
+        <div className="contact-info">
+          <h1>Оставайся с нами на связи!</h1>
+          <div className="contact-options">
+            <div className="option">
+              <div className="phone-img"></div>
+              <h5>Телефон</h5>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+            </div>
+            <span className="line"></span>
+            <div className="option">
+              <div className="point-img"></div>
+              <h5>Адрес</h5>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+            </div>
+            <span className="line"></span>
+            <div className="option">
+              <div className="mail-img"></div>
+              <h5>Почта</h5>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="contact-us">
+          <h1>Оставить заявку</h1>
+          <p>Наш менеджер свяжется с вами
+            в течение 30 минут.
+          </p>
+
+          <input className="name"></input>
+          <input className="phone-number"></input>
+          <input className="question"></input>
+          <button className="contact-us-btn"></button>
         </div>
       </div>
       

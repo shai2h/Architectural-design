@@ -219,7 +219,7 @@ body {
 
 .why_us_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   .why_us_item{
     display: flex;
     flex-direction: row;
@@ -254,6 +254,131 @@ body {
 }
 
 
+// СТИЛИ БЛОКА "УСЛУГИ"
+
+.services_block {
+  display: flex;
+  background-color: #FFF;
+  height: 929px;
+  flex-direction: column;
+  h1 {
+    font-size: 48px;
+    color: black;
+    font-style: normal;
+    margin-left: 93px;
+    margin-bottom: 128px;
+  }
+  .more-services {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    display: flex;
+    margin-right: 233px;
+    margin-top: 73px;
+    justify-content: flex-end;
+    font-weight: 300;
+    
+  }
+}
+
+.services-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 360px);
+  justify-content: space-between;
+  flex-flow: wrap;
+  .services_card {
+    width: 360px;
+    height: 675px;
+    background-color:rgb(7, 255, 193);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+    h5{
+      color:#FFF;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    span{
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 18px;
+      margin-bottom: 39px;
+      font-weight: 300;
+    }
+  }
+}
 
 
+// СТИЛИ БЛОКА "СВЯЗЬ С НАМИ"
+.contact-us-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 276px;
+  margin-bottom: 152px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    font-style: normal;
+    font-size: 48px;
+    color: black;
+    
+  }
+}
+
+.contact-options {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: baseline;
+  .line{
+    position: relative;
+    top: 150px;
+    width: 1px;
+    height: 267px;
+    background-color: #c4c4c4;
+  }
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 77px;
+  h5 {
+    font-size: 24px;
+    margin:0 auto;
+    margin-top: 40px;
+
+  }
+  p {
+    width: 209px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+  }
+  .phone-img {
+    background-image: url(./main_page_img/contact-us-block-img/phone.svg);
+    width: 67px;
+    height: 111px;
+    
+  }
+  .point-img {
+    background-image: url(./main_page_img/contact-us-block-img/point.svg);
+    width: 85px;
+    height: 106px;
+    
+  }
+  .mail-img {
+    background-image: url(./main_page_img/contact-us-block-img/mail.svg);
+    width: 120px;
+    height: 78px;
+    
+  }
+}
 
