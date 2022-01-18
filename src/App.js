@@ -1,7 +1,7 @@
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 // import Slider from 'react-slick';
-import react from "react";
+import React, { Component } from "react";
 import Slider from './components/main-slider/slider';
 
 
@@ -49,27 +49,65 @@ function App() {
 
       <div className="projects">
         <h1>Проекты</h1>
-        <div className="projects-array">
+        <div className="projects-container">
           <div className="card"> 
-            <p>Название проекта</p>
+            <h5>Название проекта</h5>
             <span>Подробнее →</span>
           </div>
           <div className="card">
-            <p>Название проекта</p>
+            <h5>Название проекта</h5>
             <span>Подробнее →</span>
           </div>
           <div className="card">
-            <p>Название проекта</p>
+            <h5>Название проекта</h5>
             <span>Подробнее →</span>
           </div>
+
           <div className="card">
-            <p>Название проекта</p>
+            <h5>Название проекта</h5>
             <span>Подробнее →</span>
           </div>
         </div>
-        <span>Все проекты →</span>
+        <span className="more">Все проекты →</span>
 
       </div>
+      
+      <div className="why_us_block">
+        <h1>Почему мы?</h1>
+
+        <div className="why_us_container">
+          <div className="why_us_item">
+            <div className="why_us_item_img">
+            </div>
+            <div className="why_us_item_info">
+              <h5>Заголовок</h5>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+            </div>
+          </div>
+          
+          <div className="why_us_item">
+            <div className="why_us_item_img">
+            </div>
+            <div className="why_us_item_info">
+              <h5>Заголовок</h5>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+            </div>
+          </div>
+
+          <div className="why_us_item">
+            <div className="why_us_item_img">
+            </div>
+            <div className="why_us_item_info">
+              <h5>Заголовок</h5>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+
 
     </div>
   );

@@ -3,7 +3,7 @@ body {
   font-family: system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: grey;
+  
   width: 1600px;
   font-family: 'Roboto';
   
@@ -70,6 +70,7 @@ body {
   h1{
     font-size: 48px;
     color:black;
+    font-style: normal;
 
   }
 
@@ -152,34 +153,105 @@ body {
   h1 {
     font-size: 48px;
     color: black;
+    font-style: normal;
+    margin-left: 93px;
+    margin-bottom: 128px;
   }
-  span {
+  .more {
     color: rgba(0, 0, 0, 0.8);
     font-size: 18px;
+    display: flex;
+    margin-right: 233px;
+    margin-top: 73px;
+    justify-content: flex-end;
+    font-weight: 300;
+    
   }
 }
 
-.projects-array {
-  display: flex;
+.projects-container {
+  display: grid;
   width: 100%;
+  grid-template-columns: repeat(auto-fill, 360px);
+  justify-content: space-between;
+  flex-flow: wrap;
   .card {
     width: 360px;
     height: 675px;
-    background-color: bisque;
-    margin: 0 54px;
-    p{
+    background-color:lightskyblue;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+    h5{
       color:#FFF;
       font-size: 24px;
+      font-weight: 500;
     }
     span{
       color: rgba(255, 255, 255, 0.8);
       font-size: 18px;
+      margin-bottom: 39px;
+      font-weight: 300;
     }
   }
 }
 
+// СТИЛИ БЛОКА "Почему мы" why_us_block
 
+.why_us_block {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  margin-top: 175px;
+  height: 600px;
+  h1 {
+    font-size: 48px;
+    font-style: normal;
+    color: black;
+    margin-left: 93px;
+    margin-bottom: 154px;
+    
+  }
+}
 
+.why_us_container {
+  display: flex;
+  justify-content: space-between;
+  .why_us_item{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .why_us_item_img {
+    background-image: url(./main_page_img/why_us_block_img/temp_img.png);
+    width: 160px;
+    height: 204px;
+  }
+
+  .why_us_item_info {
+    max-width: 223px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    h5 {
+      font-size: 36px;
+      font-style: normal;
+      margin: 0;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 300;
+      color: black;
+      font-style: normal;
+      margin: 0 auto;
+    }
+  }
+}
 
 
 
