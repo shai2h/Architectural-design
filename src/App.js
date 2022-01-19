@@ -14,10 +14,12 @@ function App() {
         <span className="logo">LOGO</span>
         <nav className="nav-items">
           <ul className="ul-items">
-            <li>О нас</li>
-            <li>Услуги</li>
-            <li>Портфолио</li>
-            <li>Награды</li>
+            <li>
+              <a className="list-item" href="#">О нас</a>
+              <a className="list-item" href="#">Услуги</a>
+              <a className="list-item" href="#">Портфолио</a>
+              <a className="list-item" href="#">Награды</a>
+            </li>
           </ul>
         </nav>
         <span className="phone">+800 000 0000</span>      
@@ -158,13 +160,21 @@ function App() {
             в течение 30 минут.
           </p>
 
-          <input className="name"></input>
-          <input className="phone-number"></input>
-          <input className="question"></input>
-          <button className="contact-us-btn"></button>
+          <div className="contact-input">
+          <input placeholder="Ваше имя" className="name"></input>
+          <input placeholder="Ваш номер" className="phone-number"></input>
+          <textarea placeholder="Пожалуйста, опишите ваш вопрос" className="question"></textarea>
+          <button className="contact-us-btn">Оставить заявку</button>
+          </div>
         </div>
       </div>
       
+      <div className="map-block">
+        <div className="map">
+          <div 
+            style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/43/kazan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Казань</a><a href="https://yandex.ru/maps/43/kazan/house/ulitsa_marshala_chuykova_58b/YEAYdwNpTkcFQFtvfXRydH5nYQ==/?ll=49.149844%2C55.835157&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=18.5" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Маршала Чуйкова, 58Б — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUyvXDHSC" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+          </div>
+      </div>
 
 
 

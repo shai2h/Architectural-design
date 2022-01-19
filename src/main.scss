@@ -4,7 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  width: 1600px;
+  max-width: 1602px;
   font-family: 'Roboto';
   
   
@@ -15,7 +15,7 @@ body {
   width: 100%;
   color:#FFF;
   padding-top: 32px;  
-  max-width: 1600px;
+  max-width: 1602px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -23,10 +23,12 @@ body {
     .logo{
       margin-left: 95px;
       font-size: 36px;
+      margin-right: 113px;
     }
     .phone{
       margin-right: 95px;
       font-size: 24px;
+      margin-left: 113px;
     }
     
     z-index: 999;
@@ -38,12 +40,18 @@ body {
 
 
 .ul-items {
+  
   li{
-    list-style-type: none;
     font-size: 20px;
-    display: inline;
-    padding: 50px;
+    list-style-type: none;
+    .list-item {
+      color: #FFF;
+      text-decoration: none;
+      margin: 0 70px;
+    }
   }
+  
+
 }
 
 .main-info {
@@ -87,6 +95,7 @@ body {
 .click-more {
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
   
   h5 {
     font-size: 18px;
@@ -161,7 +170,7 @@ body {
     color: rgba(0, 0, 0, 0.8);
     font-size: 18px;
     display: flex;
-    margin-right: 233px;
+    margin-right: 231px;
     margin-top: 73px;
     justify-content: flex-end;
     font-weight: 300;
@@ -244,11 +253,12 @@ body {
       margin: 0;
     }
     p {
+      margin-top: 18px;
       font-size: 20px;
       font-weight: 300;
       color: black;
       font-style: normal;
-      margin: 0 auto;
+      
     }
   }
 }
@@ -272,7 +282,7 @@ body {
     color: rgba(0, 0, 0, 0.8);
     font-size: 18px;
     display: flex;
-    margin-right: 233px;
+    margin-right: 231px;
     margin-top: 73px;
     justify-content: flex-end;
     font-weight: 300;
@@ -324,7 +334,7 @@ body {
   align-items: center;
   h1{
     font-style: normal;
-    font-size: 48px;
+    font-size: 64px;
     color: black;
     
   }
@@ -376,9 +386,105 @@ body {
   }
   .mail-img {
     background-image: url(./main_page_img/contact-us-block-img/mail.svg);
-    width: 120px;
+    width: 119px;
     height: 78px;
     
   }
 }
 
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 256px;
+
+  h1 {
+    font-size: 64px;
+    font-size: normal;
+    color: black;
+    margin: 0 auto;
+  }
+  
+  p{
+    margin: 0 auto;
+    font-size: 36px;
+    font-style: normal;
+    color: #000000;
+    max-width: 557px;
+    text-align: center;
+  }
+
+  
+
+}
+
+.contact-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 74px;
+  
+  
+
+  .question{
+    height: 292px;
+    resize: none;
+    font-size: 19px;
+    padding: 20px; 
+  }
+  input {
+    margin-bottom: 50px;
+    height: 65px;
+    font-size: 18px;
+    padding: 20px; 
+    height: 25px;
+  }
+  
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+ 
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  color: white;
+}
+ 
+/* Microsoft Edge */
+::-ms-input-placeholder {
+  color: white;
+}
+
+  input, textarea{
+    width: 834px;
+    background-color: #555555;
+    font-style: normal;
+    color: white;
+    font-weight: 300;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06), inset 10px 10px 20px rgba(0, 0, 0, 0.23);
+    border: 1px solid #555555;
+  }
+
+
+  .contact-us-btn{
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top:65px;
+    width: 262px;
+    height: 66px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-family: Roboto;
+    background: #FFF;
+  }
+}
+
+// СТИЛИ БЛОКА С КАРТОЙ MAP-BLOCK
+
+.map-block {
+  height: 100vh;
+  width: 100%;
+}
