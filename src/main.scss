@@ -157,7 +157,7 @@ body {
 .projects {
   display: flex;
   background-color: #FFF;
-  height: 929px;
+  
   flex-direction: column;
   h1 {
     font-size: 48px;
@@ -215,7 +215,7 @@ body {
   flex-direction: column;
   background-color: #FFF;
   margin-top: 175px;
-  height: 600px;
+  min-height: 600px;
   h1 {
     font-size: 48px;
     font-style: normal;

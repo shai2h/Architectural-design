@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import Slider from 'react-slick';
 import React, { Component } from "react";
 import Slider from './components/main-slider/slider';
-
+import about_us from '../src/pages/about_us/about_us';
 
 
 
@@ -70,8 +70,23 @@ function App() {
             <h5>Название проекта</h5>
             <span>Подробнее →</span>
           </div>
+
+          <div className="card">
+            <h5>Название проекта</h5>
+            <span>Подробнее →</span>
+          </div>
+
+          <div className="card">
+            <h5>Название проекта</h5>
+            <span>Подробнее →</span>
+          </div>
+
+          <div className="card">
+            <h5>Название проекта</h5>
+            <span>Подробнее →</span>
+          </div>
         </div>
-        <span className="more">Все проекты →</span>
+        <span className="more" id="more">Все проекты →</span>
       </div>
       
       <div className="why_us_block">
