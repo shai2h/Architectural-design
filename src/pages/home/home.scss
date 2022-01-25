@@ -7,8 +7,86 @@ body {
     max-width: 1602px;
     font-family: 'Roboto';
     
+    .card-link {
+      position: relative;
+      cursor: pointer;
+      &:hover:before{
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+        transform-origin: left;
+        -webkit-transition: -webkit-transform 0.25s;
+        transition: -webkit-transform 0.25s;
+        -o-transition: transform 0.25s;
+        transition: transform 0.25s;
+        transition: transform 0.25s, -webkit-transform 0.25s;
+      }
     
-  }
+      &::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.4);
+        position: absolute;
+        left: 0; bottom: -5px;
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+        transform-origin: right;
+        -webkit-transition: -webkit-transform 0.25s;
+        transition: -webkit-transform 0.25s;
+        -o-transition: transform 0.25s;
+        transition: transform 0.25s;
+        transition: transform 0.25s, -webkit-transform 0.25s;
+      }
+    }
+    }
+    
+    
+    .more-services-btn, .about-us-h5 {
+      font-weight: 300;
+      position: relative;
+      cursor: pointer;
+      &:hover:before{
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+        transform-origin: left;
+        -webkit-transition: -webkit-transform 0.25s;
+        transition: -webkit-transform 0.25s;
+        -o-transition: transform 0.25s;
+        transition: transform 0.25s;
+        transition: transform 0.25s, -webkit-transform 0.25s;
+      }
+    
+      &::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        left: 0; bottom: -5px;
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+        transform-origin: right;
+        -webkit-transition: -webkit-transform 0.25s;
+        transition: -webkit-transform 0.25s;
+        -o-transition: transform 0.25s;
+        transition: transform 0.25s;
+        transition: transform 0.25s, -webkit-transform 0.25s;
+      }
+    }
+
+
   
 .header {
   position: absolute;
@@ -33,8 +111,47 @@ body {
       
   z-index: 999;
 }
-  
-  
+
+// HOVER BEFORE для итемов HEADER'а
+.list-item {
+  position: relative;
+  &:hover{
+    color: rgba(0, 0, 0, 0.4);
+  }
+  &:hover:before{
+  -webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transform-origin: left;
+	-ms-transform-origin: left;
+	transform-origin: left;
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: -webkit-transform 0.25s;
+	-o-transition: transform 0.25s;
+	transition: transform 0.25s;
+	transition: transform 0.25s, -webkit-transform 0.25s;
+  }
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0; bottom: -5px;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+  }
+}
   
   
   
@@ -95,11 +212,12 @@ body {
   .click-more {
     display: flex;
     justify-content: flex-end;
-    cursor: pointer;
+    
     
     h5 {
       font-size: 18px;
       color: rgba(0, 0, 0, 0.8);
+      cursor: pointer;
     }
     
   }
@@ -166,7 +284,14 @@ body {
       margin-left: 93px;
       margin-bottom: 128px;
     }
-    .more {
+
+    .load-more-btn{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .btn {
       color: rgba(0, 0, 0, 0.8);
       font-size: 18px;
       display: flex;
@@ -174,7 +299,47 @@ body {
       margin-top: 73px;
       justify-content: flex-end;
       font-weight: 300;
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+    }
+    .btn {
       
+      position: relative;
+      &:hover:before{
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+        transform-origin: left;
+        -webkit-transition: -webkit-transform 0.25s;
+        transition: -webkit-transform 0.25s;
+        -o-transition: transform 0.25s;
+        transition: transform 0.25s;
+        transition: transform 0.25s, -webkit-transform 0.25s;
+      }
+    
+      &::before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.8);;
+        position: absolute;
+        left: 0; bottom: -5px;
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+        transform-origin: right;
+        -webkit-transition: -webkit-transform 0.25s;
+        transition: -webkit-transform 0.25s;
+        -o-transition: transform 0.25s;
+        transition: transform 0.25s;
+        transition: transform 0.25s, -webkit-transform 0.25s;
+      }
     }
   }
   
@@ -194,6 +359,14 @@ body {
       align-items: center;
       justify-content: flex-end;
       overflow: hidden;
+      }
+
+      .card-img {
+        &:hover{
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+        
       
       h5{
         position: absolute;
@@ -212,7 +385,7 @@ body {
         top: 610px;
       }
     }
-  }
+  
   
   // СТИЛИ БЛОКА "Почему мы" why_us_block
   
@@ -285,6 +458,14 @@ body {
       margin-bottom: 128px;
     }
     .more-services {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+    }
+    
+    
+    .more-services-btn {
       color: rgba(0, 0, 0, 0.8);
       font-size: 18px;
       display: flex;
@@ -350,9 +531,9 @@ body {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     .line{
-      position: relative;
+      
       top: 150px;
       width: 1px;
       height: 267px;
@@ -365,10 +546,13 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 0 77px;
+    height: 281px;
+    justify-content: space-evenly;
+   
     h5 {
       font-size: 24px;
-      margin:0 auto;
-      margin-top: 40px;
+      margin:0;
+      
   
     }
     p {
@@ -378,10 +562,12 @@ body {
       font-weight: 300;
       text-align: center;
     }
+    
     .phone-img {
       background-image: url(./main_page_img/contact-us-block-img/phone.svg);
       width: 67px;
       height: 111px;
+      
       
     }
     .point-img {
@@ -394,6 +580,8 @@ body {
       background-image: url(./main_page_img/contact-us-block-img/mail.svg);
       width: 119px;
       height: 78px;
+      margin-bottom:27px;
+      
       
     }
   }
@@ -485,6 +673,12 @@ body {
       font-weight: 300;
       font-family: Roboto;
       background: #FFF;
+      transition: 0.4s;
+
+      &:hover {
+        background: #E5E5E5;
+        transition: 0.4s;
+      }
     }
   }
   

@@ -31,7 +31,6 @@ export default class SimpleSlider extends Component {
               </div>
               <div className="mail-svg"></div>
               <div className="inst-svg"></div>
-
             </div>
 
             <div className="slide1">
@@ -49,6 +48,9 @@ export default class SimpleSlider extends Component {
                     Оставить заявку
                   </button>
               </div>
+              <div className="mail-svg"></div>
+              <div className="inst-svg"></div>
+
             </div>
 
             <div className="slide1">
@@ -67,6 +69,8 @@ export default class SimpleSlider extends Component {
                     Оставить заявку
                   </button>
               </div>
+              <div className="mail-svg"></div>
+              <div className="inst-svg"></div>
             </div>
           </Slider>
         </div>

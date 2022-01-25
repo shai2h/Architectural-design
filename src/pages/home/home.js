@@ -44,7 +44,7 @@ const Home = () => {
                     </h1>
                     <p>The word ‘architecture’ has Greek roots. It means ‘the principal builder’. The style of architecture changes according to latest technical features and people’s tastes. Some people think that architecture is simply the outer look of the building. But it’s not the full notion for this complex art form. Architecture includes designing and constructing the buildings as well as building them. Being an architect is not an easy job. A good architect should think over many tiny details before planning his project. </p>
                     <div className="click-more">
-                    <h5>Подробнее →</h5>
+                    <h5 className="about-us-h5">Подробнее →</h5>
                     {/* <div className="arrow"> */}
                         {/* <div></div> */}
                     {/* </div> */}
@@ -70,8 +70,10 @@ const Home = () => {
                         )
                     })}
                 </div>
-                <button className="btn" onClick={() => loadMore()} >Все проекты →</button>
-                // <span className="more" id="more">Все проекты →</span>
+                <div className="load-more-btn">
+                    <button className="btn" onClick={() => loadMore()} >Все проекты →</button>
+                </div>
+                
             </div>
             
             <div className="why_us_block">
@@ -126,7 +128,9 @@ const Home = () => {
                         <h5>Название услуги</h5>
                     </div>
                 </div>
-                <span className="more-services">Все проекты →</span>
+                <div className="more-services">
+                    <span className="more-services-btn">Все проекты →</span>
+                </div>
             </div>
     
             <div className="contact-us-block">
