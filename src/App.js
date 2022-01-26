@@ -1,14 +1,19 @@
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
-// import Slider from 'react-slick';
 import React, { Component } from "react";
-// import Slider from './components/main-slider/slider';
-// import about_us from '../src/pages/about_us/about_us';
 import Home from './pages/home/home'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import about_us from './pages/about_us/about_us'
 
 function App() {
   return (
-    <Home/>
+    <>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          
+        </Routes>
+      </Router>
+    </>
+    
   );
 }
 
