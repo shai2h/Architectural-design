@@ -5,8 +5,9 @@ import React, { Component, useState } from "react";
 import Slider from '../../components/main-slider/slider';
 import '../home/home.scss'
 import data from './data';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Map from "google-map-react";
+
+
+
 
 
 const Home = () => {
@@ -17,10 +18,6 @@ const Home = () => {
 
     const slice = data.cardData.slice(0, noOfElement);
     return(
-        
-
-        
-
         <div className="wrapper">
             <header className="header">
                 <span className="logo">LOGO</span>
@@ -28,9 +25,9 @@ const Home = () => {
                     <ul className="ul-items">
                         <li>
                             <a className="list-item" href="/about_us">О нас</a>
-                            <a className="list-item" href="#">Услуги</a>
-                            <a className="list-item" href="#">Портфолио</a>
-                            <a className="list-item" href="#">Награды</a>
+                            <a className="list-item" href="">Услуги</a>
+                            <a className="list-item" href="">Портфолио</a>
+                            <a className="list-item" href="">Награды</a>
                         </li>
                     </ul>
                 </nav>
@@ -176,8 +173,7 @@ const Home = () => {
             </div>
             </div>
             
-            <div className="map-block">
-                <div className="map">
+                {/* <div className="map">
                     <Map
                         bootstrapURLKeys={{key: Appconfig.GOOGLE.GAPI.KEY}}
                         defaultZoom={13}
@@ -187,8 +183,8 @@ const Home = () => {
                         }}
 
                     />
-                </div>
-            </div>
+                </div> */}
+            
         </div>
     )
 }
