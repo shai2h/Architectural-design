@@ -5,9 +5,7 @@ import React, { Component, useState } from "react";
 import Slider from '../../components/main-slider/slider';
 import '../home/home.scss'
 import data from './data';
-
-
-
+import {Link} from "react-router-dom";
 
 
 const Home = () => {
@@ -24,7 +22,8 @@ const Home = () => {
                 <nav className="nav-items">
                     <ul className="ul-items">
                         <li>
-                            <a className="list-item" href="/about_us">О нас</a>
+                            <Link className="list-item" to="/About_Us">О нас</Link>
+                            {/* <a className="list-item" href="/about_us">О нас</a> */}
                             <a className="list-item" href="">Услуги</a>
                             <a className="list-item" href="">Портфолио</a>
                             <a className="list-item" href="">Награды</a>
