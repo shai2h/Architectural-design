@@ -1,27 +1,48 @@
-import React, { Component } from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import React from 'react'
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
-const mapStyles = {
-  width: '100%',
-  height: '100%'
+const containerStyle = {
+  width: '400px',
+  height: '400px'
 };
 
-export class MapContainer extends Component {
-  render() {
-    return (
-      <Map
-        google={this.props.google}
-        zoom={4}
-        style={mapStyles}
-        initialCenter={{
-         lat: 6.2518401,
-         lng: -75.563591
-        }}
-      />
-    );
-  }
+const center = {
+  lat: -3.745,
+  lng: -38.523
+};
+
+function MyComponent() {
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: "AIzaSyBdSBXqvhFRA-yhd-Jetu5_SrKm6STVAG0"
+  })
+
+  const [map, setMap] = React.useState(null)
+
+  const onLoad = React.useCallback(function callback(map) {
+    const bounds = new window.google.maps.LatLngBounds();
+    map.fitBounds(bounds);
+    setMap(map)
+  }, [])
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null)
+  }, [])
+
+  return isLoaded ? (
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={10}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+      >
+        { /* Child components, such as markers, info windows, etc. */ }
+        <></>
+      </GoogleMap>
+  ) : <></>
 }
 
-export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBdSBXqvhFRA-yhd-Jetu5_SrKm6STVAG0'
-})(MapContainer);
+export default React.memo(MyComponent)
+
+

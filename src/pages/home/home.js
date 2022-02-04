@@ -6,7 +6,7 @@ import Slider from '../../components/main-slider/slider';
 import '../home/home.scss'
 import data from './data';
 import {Link} from "react-router-dom";
-
+import MyComponent from './MapContainer'
 
 const Home = () => {
     const [noOfElement, setnoOfElement] = useState(4);
@@ -171,18 +171,9 @@ const Home = () => {
                 </div>
             </div>
             </div>
-            
-                {/* <div className="map">
-                    <Map
-                        bootstrapURLKeys={{key: Appconfig.GOOGLE.GAPI.KEY}}
-                        defaultZoom={13}
-                        defaultCenter={{
-                            lat: 24.4539,
-                            lng: 54.3773
-                        }}
-
-                    />
-                </div> */}
+            <div className="map-block">
+                <MyComponent/>
+            </div>
             
         </div>
     )
