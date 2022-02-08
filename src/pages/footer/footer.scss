@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.footer-block {
+    width: 100%;
+    height: 100%;
+    background-color: #343332;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    .logo{
+        
+        font-size: 48px;
+        
+        color: #FFFFFF;
+        font-weight: 700;
+        font-family: Montserrat;
+    }
+
+    .footer-top-block {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+        .social {
+            display: flex;
+            align-items: center;
+
+            .inst {
+                background-image: url(./footer_img/inst.svg);
+                width: 25.7px;
+                height: 26px;
+                margin-right: 17px;
+            }
+            .vk {
+                background-image: url(./footer_img/vk.svg);
+                width: 33.24px;
+                height: 19.39px;
+            }
+        }
+    }
+}
+
+.footer-down-block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 24px;
+    color: white;
+    .footer-contact {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+
+        .foo-contact-phone {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin-top: 32px;
+            }
+            .foo-phone {
+                display: flex;
+                flex-direction: column;
+                
+                
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    
+                    .foo-phone-img {
+                        background-image: url(./footer_img/phone.svg);
+                        width: 30px;
+                        height: 50px;
+                        margin-right: 15px;
+                    }
+                    
+                }
+            }
+        }
+
+        .foo-contact-adress {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin-top: 29px;
+            }  
+            .foo-adress {
+                display: flex;
+                flex-direction: column;
+                   
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;    
+                    .foo-adress-img {
+                        background-image: url(./footer_img/point.svg);
+                        width: 42px;
+                        height: 53px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+
+        .foo-contact-mail {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin-top: 38px;
+            }
+            .foo-mail {
+                display: flex;
+                flex-direction: column;
+                
+                
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    
+                    .foo-mail-img {
+                        background-image: url(./footer_img/mail.svg);
+                        width: 53px;
+                        height: 44.23px;
+                        margin-right: 15px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+

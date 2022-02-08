@@ -7,6 +7,8 @@ import '../home/home.scss'
 import data from './data';
 import {Link} from "react-router-dom";
 import MyComponent from './MapContainer'
+import Footer from "../footer/footer"
+// import TwoGisMap from "../../components/2gis-map/TwoGisMap";
 
 const Home = () => {
     const [noOfElement, setnoOfElement] = useState(4);
@@ -174,6 +176,11 @@ const Home = () => {
             <div className="map-block">
                 <MyComponent/>
             </div>
+            <footer className="footer">
+                <Footer/>
+            </footer>
+            
+
             
         </div>
     )
